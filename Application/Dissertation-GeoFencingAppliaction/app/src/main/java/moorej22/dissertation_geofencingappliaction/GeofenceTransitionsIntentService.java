@@ -96,9 +96,6 @@ public class GeofenceTransitionsIntentService extends IntentService {
         int geofenceTransition = geofencingEvent.getGeofenceTransition();
 
         // Test that the reported transition was of interest.
-
-        /////////////CHANGE TO DWELL IN FINAL PRODUCT/////////////////////
-
         if (geofenceTransition == Geofence.GEOFENCE_TRANSITION_ENTER) {
             Long timeCheck = new Date().getTime();
 
